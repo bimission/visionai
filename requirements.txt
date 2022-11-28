@@ -1,0 +1,4 @@
+easytello
+hidapi
+pygame
+opencv-python

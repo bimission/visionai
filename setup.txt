@@ -1,0 +1,11 @@
+1. docker run --rm -it --network host aler9/rtsp-simple-server
+
+
+2.
+# This command will send an RTSP feed into the stream.
+# This command has to run in the network that has direct access to the RTSP feed.
+vaictl -p PROJECT_ID \
+         -l LOCATION_ID \
+         -c application-cluster-0 \
+         --service-endpoint visionai.googleapis.com \
+         send rtsp to streams STREAM_NAME --rtsp-uri RTSP_ADDRESS
